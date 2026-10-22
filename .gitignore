@@ -1,0 +1,15 @@
+# Éditeur
+.idea/
+*.iml
+
+# Fichiers générés par Maven
+target/
+dependency-reduced-pom.xml
+
+# Fichiers créés par l'exécution des tests (à la racine)
+/*.txt
+/*.json
+*.log
+
+# Ancien dossier de sortie
+/Quoridor
