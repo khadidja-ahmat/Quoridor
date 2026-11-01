@@ -15,6 +15,16 @@ Implémentation du jeu de plateau **Quoridor** en Java 21, avec interface graphi
 - **Deux langues** : français et anglais.
 - **Tests automatisés** : environ 640 tests (JUnit 5, Mockito, TestFX), couverture mesurée avec JaCoCo (seuil de 85 %).
 
+## Ma contribution
+
+Projet réalisé en équipe de 5. J'ai travaillé sur ces modules :
+
+- **`network` (seule)** : jeu en réseau avec serveur (`GameServer`, `MultiGameServer`), client (`GameClient`, `ClientSession`), gestion des parties et des scores, et découverte automatique des serveurs par broadcast UDP (`ServerBroadcaster`). J'ai aussi écrit les tests de ce module.
+- **`graph` (seule)** : graphe du plateau et calcul de plus court chemin. Ce module sert aux règles (un mur ne doit jamais bloquer l'arrivée d'un joueur) et aux heuristiques des IA. J'ai aussi écrit ses tests.
+- **`cli`** : interface console interactive avec ses commandes (`new`, `move`, `hint`, `undo`, `redo`, `save`, `load`, `pause`, `set`, `show`, `help`, `quit`), J'ai aussi écrit les tests de ce module.
+- **`gui`** : interface graphique JavaFX (plateau, glisser-déposer, fenêtre de configuration, menus, raccourcis clavier).
+- **`persistence`** : sauvegarde et chargement des parties et de leur historique.
+
 ## Organisation du code
 
 ```
